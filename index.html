@@ -1,738 +1,1359 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>MyResume Bootstrap Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print"> -->
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+      /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+      /**
+      * 1. Set default font family to sans-serif.
+      * 2. Prevent iOS text size adjust after orientation change, without disabling
+      *    user zoom.
+      */
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+      html {
+        font-family: sans-serif; /* 1 */
+        -webkit-text-size-adjust: 100%; /* 2 */
+        -ms-text-size-adjust: 100%; /* 2 */
+      }
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+      /**
+      * Remove default margin.
+      */
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+      body {
+        margin: 0;
+      }
 
-  <!-- =======================================================
-  * Template Name: MyResume - v3.0.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
+      /* HTML5 display definitions
+        ========================================================================== */
 
-<body>
+      /**
+      * Correct `block` display not defined for any HTML5 element in IE 8/9.
+      * Correct `block` display not defined for `details` or `summary` in IE 10/11
+      * and Firefox.
+      * Correct `block` display not defined for `main` in IE 11.
+      */
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      main,
+      menu,
+      nav,
+      section,
+      summary {
+        display: block;
+      }
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+      /**
+      * 1. Correct `inline-block` display not defined in IE 8/9.
+      * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+      */
 
-    <nav class="nav-menu">
-      <ul>
-        <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#services"><i class="bx bx-server"></i> <span>Services</span></a></li>
-        <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+      audio,
+      canvas,
+      progress,
+      video {
+        display: inline-block; /* 1 */
+        vertical-align: baseline; /* 2 */
+      }
 
-  </header><!-- End Header -->
+      /**
+      * Prevent modern browsers from displaying `audio` without controls.
+      * Remove excess height in iOS 5 devices.
+      */
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Brandon Johnson</h1>
-      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      audio:not([controls]) {
+        display: none;
+        height: 0;
+      }
+
+      /**
+      * Address `[hidden]` styling not present in IE 8/9/10.
+      * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+      */
+
+      [hidden],
+      template {
+        display: none;
+      }
+
+      /* Links
+        ========================================================================== */
+
+      /**
+      * Remove the gray background color from active links in IE 10.
+      */
+
+      a {
+        background-color: transparent;
+      }
+
+      /**
+      * Improve readability when focused and also mouse hovered in all browsers.
+      */
+
+      a:active,
+      a:hover {
+        outline: 0;
+      }
+
+      /* Text-level semantics
+        ========================================================================== */
+
+      /**
+      * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+      */
+
+      abbr[title] {
+        border-bottom: 1px dotted;
+      }
+
+      /**
+      * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+      */
+
+      b,
+      strong {
+        font-weight: bold;
+      }
+
+      /**
+      * Address styling not present in Safari and Chrome.
+      */
+
+      dfn {
+        font-style: italic;
+      }
+
+      /**
+      * Address variable `h1` font-size and margin within `section` and `article`
+      * contexts in Firefox 4+, Safari, and Chrome.
+      */
+
+      h1 {
+        margin: 0.67em 0;
+        font-size: 2em;
+      }
+
+      /**
+      * Address styling not present in IE 8/9.
+      */
+
+      mark {
+        color: #000;
+        background: #ff0;
+      }
+
+      /**
+      * Address inconsistent and variable font size in all browsers.
+      */
+
+      small {
+        font-size: 80%;
+      }
+
+      /**
+      * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+      */
+
+      sub,
+      sup {
+        position: relative;
+        font-size: 75%;
+        line-height: 0;
+        vertical-align: baseline;
+      }
+
+      sup {
+        top: -0.5em;
+      }
+
+      sub {
+        bottom: -0.25em;
+      }
+
+      /* Embedded content
+        ========================================================================== */
+
+      /**
+      * Remove border when inside `a` element in IE 8/9/10.
+      */
+
+      img {
+        border: 0;
+      }
+
+      /**
+      * Correct overflow not hidden in IE 9/10/11.
+      */
+
+      svg:not(:root) {
+        overflow: hidden;
+      }
+
+      /* Grouping content
+        ========================================================================== */
+
+      /**
+      * Address margin not present in IE 8/9 and Safari.
+      */
+
+      figure {
+        margin: 1em 40px;
+      }
+
+      /**
+      * Address differences between Firefox and other browsers.
+      */
+
+      hr {
+        height: 0;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+      }
+
+      /**
+      * Contain overflow in all browsers.
+      */
+
+      pre {
+        overflow: auto;
+      }
+
+      /**
+      * Address odd `em`-unit font size rendering in all browsers.
+      */
+
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family: monospace, monospace;
+        font-size: 1em;
+      }
+
+      /* Forms
+        ========================================================================== */
+
+      /**
+      * Known limitation: by default, Chrome and Safari on OS X allow very limited
+      * styling of `select`, unless a `border` property is set.
+      */
+
+      /**
+      * 1. Correct color not being inherited.
+      *    Known issue: affects color of disabled elements.
+      * 2. Correct font properties not being inherited.
+      * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+      */
+
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        margin: 0; /* 3 */
+        font: inherit; /* 2 */
+        color: inherit; /* 1 */
+      }
+
+      /**
+      * Address `overflow` set to `hidden` in IE 8/9/10/11.
+      */
+
+      button {
+        overflow: visible;
+      }
+
+      /**
+      * Address inconsistent `text-transform` inheritance for `button` and `select`.
+      * All other form control elements do not inherit `text-transform` values.
+      * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+      * Correct `select` style inheritance in Firefox.
+      */
+
+      button,
+      select {
+        text-transform: none;
+      }
+
+      /**
+      * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+      *    and `video` controls.
+      * 2. Correct inability to style clickable `input` types in iOS.
+      * 3. Improve usability and consistency of cursor style between image-type
+      *    `input` and others.
+      */
+
+      button,
+      html input[type="button"], /* 1 */
+      input[type="reset"],
+      input[type="submit"] {
+        -webkit-appearance: button; /* 2 */
+        cursor: pointer; /* 3 */
+      }
+
+      /**
+      * Re-set default cursor for disabled elements.
+      */
+
+      button[disabled],
+      html input[disabled] {
+        cursor: default;
+      }
+
+      /**
+      * Remove inner padding and border in Firefox 4+.
+      */
+
+      button::-moz-focus-inner,
+      input::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+      }
+
+      /**
+      * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+      * the UA stylesheet.
+      */
+
+      input {
+        line-height: normal;
+      }
+
+      /**
+      * It's recommended that you don't attempt to style these elements.
+      * Firefox's implementation doesn't respect box-sizing, padding, or width.
+      *
+      * 1. Address box sizing set to `content-box` in IE 8/9/10.
+      * 2. Remove excess padding in IE 8/9/10.
+      */
+
+      input[type="checkbox"],
+      input[type="radio"] {
+        box-sizing: border-box; /* 1 */
+        padding: 0; /* 2 */
+      }
+
+      /**
+      * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+      * `font-size` values of the `input`, it causes the cursor style of the
+      * decrement button to change from `default` to `text`.
+      */
+
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        height: auto;
+      }
+
+      /**
+      * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+      * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+      *    (include `-moz` to future-proof).
+      */
+
+      input[type="search"] {
+        -webkit-box-sizing: content-box; /* 2 */
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        -webkit-appearance: textfield; /* 1 */
+      }
+
+      /**
+      * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+      * Safari (but not Chrome) clips the cancel button when the search input has
+      * padding (and `textfield` appearance).
+      */
+
+      input[type="search"]::-webkit-search-cancel-button,
+      input[type="search"]::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+
+      /**
+      * Define consistent border, margin, and padding.
+      */
+
+      fieldset {
+        padding: 0.35em 0.625em 0.75em;
+        margin: 0 2px;
+        border: 1px solid #c0c0c0;
+      }
+
+      /**
+      * 1. Correct `color` not being inherited in IE 8/9/10/11.
+      * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+      */
+
+      legend {
+        padding: 0; /* 2 */
+        border: 0; /* 1 */
+      }
+
+      /**
+      * Remove default vertical scrollbar in IE 8/9/10/11.
+      */
+
+      textarea {
+        overflow: auto;
+      }
+
+      /**
+      * Don't inherit the `font-weight` (applied by a rule above).
+      * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+      */
+
+      optgroup {
+        font-weight: bold;
+      }
+
+      /* Tables
+        ========================================================================== */
+
+      /**
+      * Remove most spacing between table cells.
+      */
+
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+
+      td,
+      th {
+        padding: 0;
+      }
+
+      /* LAYOUT STYLES */
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #666;
+        background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
+      }
+
+      p {
+        margin-top: 0;
+      }
+
+      a {
+        color: #2879d0;
+      }
+      a:hover {
+        color: #2268b2;
+      }
+
+      header {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+        /* background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x; */
+        background-image: linear-gradient(53deg, #0083e8, #0f5ba4 43%, #20305a);
+        background-repeat: no-repeat;
+        border-bottom: solid 1px #275da1;
+      }
+
+      header h1 {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0.2em;
+        font-size: 72px;
+        font-weight: normal;
+        line-height: 1;
+        color: #fff;
+        letter-spacing: -1px;
+      }
+
+      header h2 {
+        width: 540px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 26px;
+        font-weight: normal;
+        line-height: 1.3;
+        color: #9ddcff;
+        letter-spacing: 0;
+      }
+
+      .inner {
+        position: relative;
+        width: 940px;
+        margin: 0 auto;
+      }
+
+      #content-wrapper {
+        padding-top: 30px;
+        border-top: solid 1px #fff;
+      }
+
+      #main-content {
+        float: left;
+        width: 690px;
+      }
+
+      #main-content img {
+        max-width: 100%;
+      }
+
+      aside#sidebar {
+        float: right;
+        width: 200px;
+        min-height: 504px;
+        padding-left: 20px;
+        font-size: 12px;
+        line-height: 1.3;
+        background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
+      }
+
+      aside#sidebar p.repo-owner,
+      aside#sidebar p.repo-owner a {
+        font-weight: bold;
+      }
+
+      #downloads {
+        margin-bottom: 40px;
+      }
+
+      a.button {
+        width: 134px;
+        height: 58px;
+        padding-top: 22px;
+        padding-left: 68px;
+        font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+        font-size: 23px;
+        line-height: 1.2;
+        color: #fff;
+      }
+      a.button small {
+        display: block;
+        font-size: 11px;
+      }
+      header a.button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: transparent url(../images/github-button.png) 0 0 no-repeat;
+      }
+      aside a.button {
+        display: block;
+        width: 138px;
+        padding-left: 64px;
+        margin-bottom: 20px;
+        font-size: 21px;
+        background: transparent url(../images/download-button.png) 0 0 no-repeat;
+      }
+
+      code, pre {
+        margin-bottom: 30px;
+        font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+        font-size: 13px;
+        color: #222;
+      }
+
+      code {
+        padding: 0 3px;
+        background-color: #f2f8fc;
+        border: solid 1px #dbe7f3;
+      }
+
+      pre {
+        padding: 20px;
+        overflow: auto;
+        text-shadow: none;
+        background: #fff;
+        border: solid 1px #f2f2f2;
+      }
+      pre code {
+        padding: 0;
+        color: #2879d0;
+        background-color: #fff;
+        border: none;
+      }
+
+      ul, ol, dl {
+        margin-bottom: 20px;
+      }
+
+
+      /* COMMON STYLES */
+
+      hr {
+        height: 0;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        border: 0;
+        border-top: solid 1px #ddd;
+      }
+
+      table {
+        width: 100%;
+        border: 1px solid #ebebeb;
+      }
+
+      th {
+        font-weight: 500;
+      }
+
+      td {
+        font-weight: 300;
+        text-align: center;
+        border: 1px solid #ebebeb;
+      }
+
+      form {
+        padding: 20px;
+        background: #f2f2f2;
+
+      }
+
+
+      /* GENERAL ELEMENT TYPE STYLES */
+
+      #main-content h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+        font-size: 2.8em;
+        font-weight: normal;
+        color: #474747;
+        text-indent: 6px;
+        letter-spacing: -1px;
+      }
+
+      #main-content h1:before {
+        padding-right: 0.3em;
+        margin-left: -0.9em;
+        color: #9ddcff;
+        content: "/";
+      }
+
+      #main-content h2 {
+        margin-bottom: 8px;
+        font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+        font-size: 22px;
+        font-weight: bold;
+        color: #474747;
+        text-indent: 4px;
+      }
+      #main-content h2:before {
+        padding-right: 0.3em;
+        margin-left: -1.5em;
+        content: "//";
+        color: #9ddcff;
+      }
+
+      #main-content h3 {
+        margin-top: 24px;
+        margin-bottom: 8px;
+        font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: #474747;
+        text-indent: 3px;
+      }
+
+      #main-content h3:before {
+        padding-right: 0.3em;
+        margin-left: -2em;
+        content: "///";
+        color: #9ddcff;
+      }
+
+      #main-content h4 {
+        margin-bottom: 8px;
+        font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: #474747;
+        text-indent: 3px;
+      }
+
+      h4:before {
+        padding-right: 0.3em;
+        margin-left: -2.8em;
+        content: "////";
+        color: #9ddcff;
+      }
+
+      #main-content h5 {
+        margin-bottom: 8px;
+        font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+        font-size: 14px;
+        color: #474747;
+        text-indent: 3px;
+      }
+      h5:before {
+        padding-right: 0.3em;
+        margin-left: -3.2em;
+        content: "/////";
+        color: #9ddcff;
+      }
+
+      #main-content h6 {
+        margin-bottom: 8px;
+        font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+        font-size: .8em;
+        color: #474747;
+        text-indent: 3px;
+      }
+      h6:before {
+        padding-right: 0.3em;
+        margin-left: -3.7em;
+        content: "//////";
+        color: #9ddcff;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      p a {
+        font-weight: 400;
+      }
+
+      blockquote {
+        padding: 0 0 0 30px;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        border-left: 10px solid #e9e9e9;
+      }
+
+      ul {
+        list-style-position: inside;
+        list-style: disc;
+        padding-left: 20px;
+      }
+
+      ol {
+        list-style-position: inside;
+        list-style: decimal;
+        padding-left: 3px;
+      }
+
+      dl dd {
+        font-style: italic;
+        font-weight: 100;
+      }
+
+      footer {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin-top: 40px;
+        font-size: 13px;
+        color: #aaa;
+        background: transparent url('../images/hr.png') 0 0 no-repeat;
+      }
+
+      footer a {
+        color: #666;
+      }
+      footer a:hover {
+        color: #444;
+      }
+
+      /* MISC */
+      .clearfix:after {
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        content: '.';
+      }
+
+      .clearfix {display: inline-block;}
+      * html .clearfix {height: 1%;}
+      .clearfix {display: block;}
+
+      .block50 {
+        float: left;
+        width: 50%;
+      }
+
+      .actions {
+        text-align: right;
+      }
+
+      .btn-follow {
+        position: static !important;
+        display: block;
+        margin-left: calc(100% - 202px);
+        text-align: left;
+      }
+
+      .bmc-button {
+        margin: 17px auto 0;
+        display: block !important;
+      }
+
+      /* #Media Queries
+      ================================================== */
+
+      /* Smaller than standard 960 (devices and browsers) */
+      @media only screen and (max-width: 959px) { }
+
+      /* Tablet Portrait size to standard 960 (devices and browsers) */
+      @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .inner {
+          width: 740px;
+        }
+        header h1, header h2 {
+          width: 340px;
+        }
+        header h1 {
+          font-size: 60px;
+        }
+        header h2 {
+          font-size: 30px;
+        }
+        #main-content {
+          width: 490px;
+        }
+        #main-content h1:before,
+        #main-content h2:before,
+        #main-content h3:before,
+        #main-content h4:before,
+        #main-content h5:before,
+        #main-content h6:before {
+          padding-right: 0;
+          margin-left: 0;
+          content: none;
+        }
+      }
+
+      /* All Mobile Sizes (devices and browser) */
+      @media only screen and (max-width: 767px) {
+        .inner {
+          width: 93%;
+        }
+        header {
+          padding: 20px 0;
+        }
+        header .inner {
+          position: relative;
+        }
+        header h1, header h2 {
+          width: 100%;
+        }
+        header h1 {
+          font-size: 48px;
+        }
+        header h2 {
+          font-size: 24px;
+        }
+        header a.button {
+          position: relative;
+          display: inline-block;
+          width: auto;
+          height: auto;
+          padding: 14px 10px;
+          margin-top: 15px;
+          font-size: 13px;
+          line-height: 1;
+          color: #2879d0;
+          text-align: center;
+          background-color: #9ddcff;
+          background-image: none;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+        }
+        header a.button small {
+          display: inline;
+          font-size: 13px;
+        }
+        #main-content,
+        aside#sidebar {
+          float: none;
+          width: 100% ! important;
+        }
+        aside#sidebar {
+          min-height: 0;
+          padding: 20px 0;
+          margin-top: 20px;
+          background-image: none;
+          border-top: solid 1px #ddd;
+        }
+        aside#sidebar a.button {
+          display: none;
+        }
+        #main-content h1:before,
+        #main-content h2:before,
+        #main-content h3:before,
+        #main-content h4:before,
+        #main-content h5:before,
+        #main-content h6:before {
+          padding-right: 0;
+          margin-left: 0;
+          content: none;
+        }
+        .block50 {
+          float: none !important;
+          width: auto !important;
+        }
+        .btn-follow {
+          margin-left: auto;
+        }
+        .actions {
+          text-align: left;
+          display: flex;
+        }
+      }
+
+      /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+      @media only screen and (min-width: 480px) and (max-width: 767px) { }
+
+      /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+      @media only screen and (max-width: 479px) { }
+
+      /*
+
+      The MIT License (MIT)
+
+      Copyright (c) 2016 GitHub, Inc.
+
+      Permission is hereby granted, free of charge, to any person obtaining a copy
+      of this software and associated documentation files (the "Software"), to deal
+      in the Software without restriction, including without limitation the rights
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+      copies of the Software, and to permit persons to whom the Software is
+      furnished to do so, subject to the following conditions:
+
+      The above copyright notice and this permission notice shall be included in all
+      copies or substantial portions of the Software.
+
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+      FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+      LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+      OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+      SOFTWARE.
+
+      */
+
+      .pl-c /* comment */ {
+        color: #969896;
+      }
+
+      .pl-c1 /* constant, variable.other.constant, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header */,
+      .pl-s .pl-v /* string variable */ {
+        color: #0086b3;
+      }
+
+      .pl-e /* entity */,
+      .pl-en /* entity.name */ {
+        color: #795da3;
+      }
+
+      .pl-smi /* variable.parameter.function, storage.modifier.package, storage.modifier.import, storage.type.java, variable.other */,
+      .pl-s .pl-s1 /* string source */ {
+        color: #333;
+      }
+
+      .pl-ent /* entity.name.tag */ {
+        color: #63a35c;
+      }
+
+      .pl-k /* keyword, storage, storage.type */ {
+        color: #a71d5d;
+      }
+
+      .pl-s /* string */,
+      .pl-pds /* punctuation.definition.string, string.regexp.character-class */,
+      .pl-s .pl-pse .pl-s1 /* string punctuation.section.embedded source */,
+      .pl-sr /* string.regexp */,
+      .pl-sr .pl-cce /* string.regexp constant.character.escape */,
+      .pl-sr .pl-sre /* string.regexp source.ruby.embedded */,
+      .pl-sr .pl-sra /* string.regexp string.regexp.arbitrary-repitition */ {
+        color: #183691;
+      }
+
+      .pl-v /* variable */ {
+        color: #ed6a43;
+      }
+
+      .pl-id /* invalid.deprecated */ {
+        color: #b52a1d;
+      }
+
+      .pl-ii /* invalid.illegal */ {
+        color: #f8f8f8;
+        background-color: #b52a1d;
+      }
+
+      .pl-sr .pl-cce /* string.regexp constant.character.escape */ {
+        font-weight: bold;
+        color: #63a35c;
+      }
+
+      .pl-ml /* markup.list */ {
+        color: #693a17;
+      }
+
+      .pl-mh /* markup.heading */,
+      .pl-mh .pl-en /* markup.heading entity.name */,
+      .pl-ms /* meta.separator */ {
+        font-weight: bold;
+        color: #1d3e81;
+      }
+
+      .pl-mq /* markup.quote */ {
+        color: #008080;
+      }
+
+      .pl-mi /* markup.italic */ {
+        font-style: italic;
+        color: #333;
+      }
+
+      .pl-mb /* markup.bold */ {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .pl-md /* markup.deleted, meta.diff.header.from-file */ {
+        color: #bd2c00;
+        background-color: #ffecec;
+      }
+
+      .pl-mi1 /* markup.inserted, meta.diff.header.to-file */ {
+        color: #55a532;
+        background-color: #eaffea;
+      }
+
+      .pl-mdr /* meta.diff.range */ {
+        font-weight: bold;
+        color: #795da3;
+      }
+
+      .pl-mo /* meta.output */ {
+        color: #1d3e81;
+      }
+
+
+
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed,
+      figure, figcaption, footer, header, hgroup,
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        padding: 0;
+        margin: 0;
+        font: inherit;
+        font-size: 100%;
+        vertical-align: baseline;
+        border: 0;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure,
+      footer, header, hgroup, menu, nav, section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol, ul {
+        list-style: none;
+      }
+      blockquote, q {
+        quotes: none;
+      }
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+        content: '';
+        content: none;
+      }
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #000;
+      }
+
+      a {
+        font-weight: bold;
+        color: #d5000d;
+      }
+
+      header {
+        padding-top: 35px;
+        padding-bottom: 10px;
+      }
+
+      header h1 {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #303030;
+        letter-spacing: -1px;
+      }
+
+      header h2 {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 1.3;
+        color: #aaa;
+        letter-spacing: -1px;
+      }
+      #downloads {
+        display: none;
+      }
+      #main_content {
+        padding-top: 20px;
+      }
+
+      code, pre {
+        margin-bottom: 30px;
+        font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
+        font-size: 12px;
+        color: #222;
+      }
+
+      code {
+        padding: 0 3px;
+      }
+
+      pre {
+        padding: 20px;
+        overflow: auto;
+        border: solid 1px #ddd;
+      }
+      pre code {
+        padding: 0;
+      }
+
+      ul, ol, dl {
+        margin-bottom: 20px;
+      }
+
+
+      /* COMMON STYLES */
+
+      table {
+        width: 100%;
+        border: 1px solid #ebebeb;
+      }
+
+      th {
+        font-weight: 500;
+      }
+
+      td {
+        font-weight: 300;
+        text-align: center;
+        border: 1px solid #ebebeb;
+      }
+
+      form {
+        padding: 20px;
+        background: #f2f2f2;
+
+      }
+
+
+      /* GENERAL ELEMENT TYPE STYLES */
+
+      h1 {
+        font-size: 2.8em;
+      }
+
+      h2 {
+        margin-bottom: 8px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #303030;
+      }
+
+      h3 {
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #d5000d;
+      }
+
+      h4 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #303030;
+      }
+
+      h5 {
+        font-size: 1em;
+        color: #303030;
+      }
+
+      h6 {
+        font-size: .8em;
+        color: #303030;
+      }
+
+      p {
+        margin-bottom: 20px;
+        font-weight: 300;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      p a {
+        font-weight: 400;
+      }
+
+      blockquote {
+        padding: 0 0 0 30px;
+        margin-bottom: 20px;
+        font-size: 1.6em;
+        border-left: 10px solid #e9e9e9;
+      }
+
+      ul li {
+        padding-left: 20px;
+        list-style-position: inside;
+        list-style: disc;
+      }
+
+      ol li {
+        padding-left: 3px;
+        list-style-position: inside;
+        list-style: decimal;
+      }
+
+      dl dd {
+        font-style: italic;
+        font-weight: 100;
+      }
+
+      footer {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin-top: 40px;
+        font-size: 13px;
+        color: #aaa;
+      }
+
+      footer a {
+        color: #666;
+      }
+
+      /* MISC */
+      .clearfix:after {
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        content: '.';
+      }
+
+      .clearfix {display: inline-block;}
+      * html .clearfix {height: 1%;}
+      .clearfix {display: block;}
+
+
+
+
+
+
+
+    .bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#FFFFFF !important;background-color:#FF813F !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 23px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#FFFFFF !important;}
+    </style>
+    <title>Mingcheng Li-Software Engineer</title>
+  </head>
+
+
+
+	</head>
+	<body>
+    <header>
+      <div class="inner">
+        <div class="clearfix">
+          <div class="">
+            <h1>Mingcheng Li(李明成)</h1>
+            <h2>Software Engineer from China</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h3>
+            <a id="about-me" class="anchor" href="#about-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>About Me
+          </h3>
+          Full-stack developer with over 9+ years of experience in several development fields. 
+          I like to challenge new techniques and solving critical problems. 
+          I am always ready to learn new technique and raise my skills.
+          <h3>
+            <a id="list-skills" class="anchor" href="#list-skills" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>SKILLSET
+          </h3>
+          <ul>
+            <li>Development Language - PHP, Java, C++, HTML5, CSS3, Javascript, Python</li>
+            <li>Javascript - jQuery, Ajax, Node.js, Vue.js, React.js, ExpressJS</li>
+            <li>PHP - Codeigniter, Laravel, CakePHP</li>
+            <li>Python - Fastapi, Django</li>
+            <li>Database - Oracle, MySQL, PostgreSQL, SQLite</li>
+            <li>Server Management - AWS Console, ECS, Linux Nginx, PM2</li>
+          </ul>
+
+          <h3>
+            <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>Contact or Hire
+          </h3>
+
+          <p>
+            I'm always ready to carry your idea to reality. If you have any interest of working with me, please don't hesitate to contact me below phone or email.
+          </p>
+          <p>Phone: +86 13364280366</p>
+          <p>Email: <a href="mailto:wayne123666@gmail.com">wayne123666@gmail.com</a></p>
+        </section>
+
+        <!-- <aside id="sidebar" style="text-align: center;">
+          <img src="images/avatar.jpg" style="margin: 0 0 20px;" height="230px">
+          <h3>Dedicated Freelancer</h3>
+        </aside> -->
       </div>
     </div>
-  </section><!-- End Hero -->
 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>UI/UX Designer &amp; Web Developer.</h3>
-            <p class="font-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 1 May 1995</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> www.example.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +123 456 7890</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> City : New York, USA</li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 30</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Master</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> email@example.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">521</span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
-              <p>Hard Workers</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bx bxl-dribbble"></i>
-              </div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bx bx-file"></i>
-              </div>
-              <h4><a href="">Sed Perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bx-tachometer"></i>
-              </div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-yellow">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bx bx-layer"></i>
-              </div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bx bx-slideshow"></i>
-              </div>
-              <h4><a href="">Dele Cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-teal">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bx bx-arch"></i>
-              </div>
-              <h4><a href="">Divera Don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-        </div>
-
-        <div class="owl-carousel testimonials-carousel" data-aos="zoom-in" data-aos-delay="100">
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Brandon Johnson</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
